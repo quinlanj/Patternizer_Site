@@ -1,0 +1,12 @@
+Written by Quinlan Jung:
+
+WHAT IS THIS:
+It finds regex patterns in a log file that you input. 
+
+TO INSTALL:
+
+$ bash install
+
+FAQ:
+Q1. I want the tokenizer (patternizer) to support more things. 
+A.  Download the tokenizer from my bitbucket repo
