@@ -1,6 +1,13 @@
 #!/bin/bash
+#This script installs and sets up everything that is needed for the site
 
-#Make sure textbox file has proper permissions
+# Step 1: Make sure textbox file has proper permissions, remove txt files if they exist
 chmod a+x tokenize
-rm ./result.text
+rm ./result.txt
 rm ./out.txt
+
+#Step 2: Untar the token_prototype.tar.gz and install it
+tar -xvf token_prototype.tar.gz
+cd token_prototype
+bash install
+cd ..
