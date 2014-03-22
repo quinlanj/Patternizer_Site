@@ -17,16 +17,18 @@ include('layout.php');
 <ul class="nav nav-tabs">
   <li class="active"><a href="#patternizer" data-toggle="tab">Patternizer</a></li>
   <li><a href="#patterns" data-toggle="tab">Patterns</a></li>
+  <li><a href="#output" data-toggle="tab">Output</a></li>
 </ul>
 
 <!-- Tab panes -->
+<!-- PATTERNIZER TAB -->
 <div class="tab-content">
   <div class="tab-pane active" id="patternizer">
     <h1>Patternizer</h1><hr>
     <!-- Form for input -->
         <form id="input_data" action="file.php" name="form" method="post" enctype="multipart/form-data">
           <div class="form-group">
-            <textarea name="text_box" cols=45 rows=10 class="form-control"></textarea>
+            <textarea name="text_box" title="Must be at least 8 characters." cols=45 rows=10 class="form-control"></textarea>
             <label for="file">Filename:</label>
             <input type="file" name="file" id="file" class="form-control">
           </div><br>
@@ -40,19 +42,18 @@ include('layout.php');
 
         </form>
         <!-- Form End -->
-
-        <textarea id="regex"> </textarea>
-        <br>
-
-        <!-- Button trigger modal -->
-        <button id="buttonmash" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-          patterns
-        </button>
-        <!-- Button End -->
     </div>
+
+
+<!-- PATTERN TAB -->
   <div class="tab-pane" id="patterns">
     <h1>Patterns</h1><hr>
     <div id="result"></div>
+  </div>
+
+  <div class="tab-pane" id="output">
+    <h1>Output</h1><hr>
+    <textarea id="regex"> </textarea>
   </div>
 </div>
 
