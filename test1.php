@@ -51,6 +51,7 @@ include('layout.php');
         <!-- Button End -->
     </div>
   <div class="tab-pane" id="patterns">
+    <h1>Patterns</h1><hr>
     <div id="result"></div>
   </div>
 </div>
