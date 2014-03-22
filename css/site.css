@@ -1,0 +1,25 @@
+body
+{
+padding-top:2cm;
+}
+
+
+ 
+
+/* This CSS will set the hover transitions */
+div.clickable {
+  background-color:white;
+  -o-transition:color .2s ease-out, background 1s ease-in;
+  -ms-transition:color .2s ease-out, background 1s ease-in;
+  -moz-transition:color .2s ease-out, background 1s ease-in;
+  -webkit-transition:color .2s ease-out, background 1s ease-in;
+  /* ...and now override with proper CSS property */
+  transition:color .2s ease-out, background 0.2s ease-in;
+}
+
+
+/* This CSS add-on will make the div class="hover" change its background color on hover. 
+This way you don't need to do any javascript */
+div.clickable:hover{
+	background-color: lightblue;
+}

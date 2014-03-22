@@ -1,0 +1,6 @@
+#!/bin/bash
+
+#Make sure textbox file has proper permissions
+chmod a+x tokenize
+rm ./result.text
+rm ./out.txt

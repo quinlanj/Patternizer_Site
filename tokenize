@@ -1,0 +1,7 @@
+#!/bin/bash
+
+#This script runs lex and loghound on the user's file 
+#The results are put into result.txt
+
+./token_prototype/lex/parser $1
+echo out.txt | xargs ./token_prototype/loghound/loghound -s $2 > result.txt
