@@ -9,7 +9,7 @@ include('layout.php');
 <body>
 
 
-<div class="container"><!-- Div Class Container -->
+<div class="container" ><!-- Div Class Container -->
 
 <!-- Tab Navigation -->
 <ul class="nav nav-tabs">
@@ -42,7 +42,7 @@ include('layout.php');
 
         </form>
         <!-- Form End -->
-    </div>
+  </div>
 <!-- END OF PATTERNIZER TAB -->
 
 
