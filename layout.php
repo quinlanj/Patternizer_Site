@@ -9,12 +9,15 @@
 
 
 <!-- Navbar -->
-<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+<nav class="navbar navbar-default navbar-fixed-top navbar-inner " role="navigation">
   <div class="container">
+    <div class="navbar-header">
       <ul class="nav navbar-nav">
+
         <li><a href="./test1.php">Patternizer</a></li>
         <li><a href="./about.php">About</a></li>
       </ul>
+    </div>
   </div><!-- /.container-fluid -->
 </nav>
 
