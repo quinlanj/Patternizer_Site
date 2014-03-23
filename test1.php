@@ -15,9 +15,9 @@ include('layout.php');
 <div class="container">
 
 <ul class="nav nav-tabs">
-  <li class="active"><a href="#patternizer" data-toggle="tab">Patternizer</a></li>
-  <li><a href="#patterns" data-toggle="tab">Patterns</a></li>
-  <li><a href="#output" data-toggle="tab">Output</a></li>
+  <li id="a1" class="active"><a href="#patternizer" data-toggle="tab">Patternizer</a></li>
+  <li id ="a2"><a href="#patterns" data-toggle="tab">Patterns</a></li>
+  <li id="a3"><a href="#output" data-toggle="tab">Output</a></li>
 </ul>
 
 <!-- Tab panes -->
@@ -86,7 +86,13 @@ include('layout.php');
           }, 2000);
       });
 
-
+//       This Function switches the tab to output once a pattern is selected.
+      $("#result").click(function() {
+          $("#a3").toggleClass("active");
+          $("#output").toggleClass("active");
+          $("#a3").siblings().removeClass("active");
+          $("#output").siblings().removeClass("active");
+        });
     </script>
 
 
