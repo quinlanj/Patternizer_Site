@@ -9,18 +9,18 @@ include('layout.php');
 <body>
 
 
+<div class="container"><!-- Div Class Container -->
 
-<!-- <button id="quinlan"> Quin</button> -->
-
-<div class="container">
-
+<!-- Tab Navigation -->
 <ul class="nav nav-tabs">
   <li id="a1" class="active"><a href="#patternizer" data-toggle="tab">Patternizer</a></li>
   <li id ="a2"><a href="#patterns" data-toggle="tab">Patterns</a></li>
   <li id="a3"><a href="#output" data-toggle="tab">Output</a></li>
 </ul>
+<!-- End of Tab Navigation -->
 
 <!-- Tab panes -->
+
 <!-- PATTERNIZER TAB -->
 <div class="tab-content">
   <div class="tab-pane active" id="patternizer">
@@ -43,6 +43,7 @@ include('layout.php');
         </form>
         <!-- Form End -->
     </div>
+<!-- END OF PATTERNIZER TAB -->
 
 
 <!-- PATTERN TAB -->
@@ -50,20 +51,25 @@ include('layout.php');
     <h1>Patterns</h1><hr>
     <div id="result"></div>
   </div>
+<!-- END OF PATTERN TAB -->
 
+<!-- OUTPUT TAB -->
   <div class="tab-pane" id="output">
     <h1>Output</h1><hr>
     <textarea id="regex"> </textarea>
   </div>
+<!-- END OF OUTPUT TAB -->
+
 </div>
+<!-- End of Tab Panes -->
 
 
 
-     </div>  <!-- div class="container" end-->
+</div><!-- Div Class Container End-->
 
 
-    <!-- Javascript -->
-    <script>
+<!-- Javascript -->
+<script>
 
 
 
@@ -74,27 +80,31 @@ include('layout.php');
       	$('#regex').val(regex_str);
           //console.log(regex_div.innerHTML);
       });
-
-
       getFile();
 
-      //JQuery Scroll on click
 
-      $("#quinlan").click(function() {
-          $('html, body').animate({
-              scrollTop: $("#buttonmash").offset().top
-          }, 2000);
+
+      //This function switches the patternizer tab to patterns when it is clicked.
+      $("#search-submit").click(function() {
+        $("#a2").toggleClass("active");
+        $("#patterns").toggleClass("active");
+        $("#a2").siblings().removeClass("active");
+        $("#patterns").siblings().removeClass("active");
       });
+      //End of function
 
-//       This Function switches the tab to output once a pattern is selected.
+
+      //This Function switches the tab to output once a pattern is selected.
       $("#result").click(function() {
           $("#a3").toggleClass("active");
           $("#output").toggleClass("active");
           $("#a3").siblings().removeClass("active");
           $("#output").siblings().removeClass("active");
         });
-    </script>
+      //End of function
 
+</script>
+<!-- End of Script -->
 
 
 
