@@ -25,7 +25,7 @@ include('layout.php');
 <!-- PATTERNIZER TAB -->
 <div class="tab-content">
   <div class="tab-pane active" id="patternizer">
-    <h1>Upload your log file.</h1><hr>
+    <h1>Step 1: Upload your log file.</h1><hr>
     <!-- Form for input -->
         <form id="input_data" action="file.php" name="form" method="post" enctype="multipart/form-data">
           <div class="form-group">
@@ -49,14 +49,14 @@ include('layout.php');
 
 <!-- PATTERN TAB -->
   <div class="tab-pane" id="patterns">
-    <h1>Choose A Pattern</h1><hr>
+    <h1>Step 2: Choose a pattern</h1><hr>
     <div id="result"></div>
   </div>
 <!-- END OF PATTERN TAB -->
 
 <!-- OUTPUT TAB -->
   <div class="tab-pane" id="output">
-    <h1>Here is the Pattern Regex</h1><hr>
+    <h1>Result: Here is the pattern regex</h1><hr>
     <textarea id="regex"> </textarea>
   </div>
 <!-- END OF OUTPUT TAB -->
