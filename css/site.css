@@ -6,6 +6,10 @@ textarea.form-control {
   width: 100%;
 }
 
+.navbar-inner-fly
+{
+  background-color: black;
+}
 /* This CSS will set the hover transitions */
 div.clickable {
   background-color:white;
