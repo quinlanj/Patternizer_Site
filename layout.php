@@ -1,4 +1,5 @@
 
+<!-- Import all the files we need -->
 <head>
 <link href="css/site.css" rel="stylesheet" media="screen">
 <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
@@ -15,7 +16,7 @@
     <div class="navbar-header">
       <ul class="nav navbar-nav">
 
-        <li><a href="./test1.php">Patternizer</a></li>
+        <li><a href="./index.php">Patternizer</a></li>
         <li><a href="./about.php">About</a></li>
       </ul>
     </div>

@@ -1,5 +1,8 @@
 <?php
 
+	//this file processes the files you submit
+	// and run the patternizer on it.
+
 	function upload_file (){
 		echo "<p>writing file</p>";
 

@@ -1,15 +1,16 @@
 
-
+<!-- The Main Page for the Patternizer Frontend -->
 <html>
 
+<!-- include the dependencies -->
 <?php
 include('layout.php');
 ?>
 
 <body>
 
-
-<div class="container" ><!-- Div Class Container -->
+<!-- Div Class Container -->
+<div class="container" >
 
 <!-- Tab Navigation -->
 <ul class="nav nav-tabs">
@@ -34,8 +35,8 @@ include('layout.php');
           </div><br>
 
           <div class="form-group">
-            <label for="support">Support:</label>
-            <input type="text" name="support" size="50" placeholder="Enter Support" class="form-control"> <br>
+            <label for="support">Frequency:</label>
+            <input type="text" name="support" size="50" placeholder="Enter the minimum frequency" class="form-control"> <br>
           </div><br>
 
           <input type="submit" id="search-submit" value="submit" class="btn btn-primary">
@@ -64,24 +65,12 @@ include('layout.php');
 <!-- End of Tab Panes -->
 
 
-
-</div><!-- Div Class Container End-->
+</div>
+<!-- Div Class Container End-->
 
 
 <!-- Javascript -->
 <script>
-      // return a parameter value from the current URL
-      function getParam ( sname ){
-        var params = location.search.substr(location.search.indexOf("?")+1);
-        var sval = "";
-        params = params.split("&");
-        // split param and value into individual pieces
-        for (var i=0; i<params.length; i++){
-            temp = params[i].split("=");
-            if ( [temp[0]] == sname ) { sval = temp[1]; }
-        } 
-        return sval;
-      }
 
       // Check to see if we have submitted a log file or anything in the text box
       // switch to the patterns tab if we have
@@ -116,10 +105,7 @@ include('layout.php');
       //End of function
 
 </script>
-<!-- End of Script -->
-
-
-
+<!-- End of Javascript -->
 
 </body>
 </html>

@@ -1,12 +1,65 @@
-Written by Quinlan Jung:
+===========================================================
+===========================================================
+================  PATTERNIZER FRONTEND  ===================
+===========================================================
+===========================================================
+
+Written by Quinlan Jung
 
 WHAT IS THIS:
-It finds regex patterns in a log file that you input. 
+Finds common regex patterns in logs using a basic tokenizer 
+(Lex) and Loghound (frequent itemset miner).
+
+===========================================================
+===================    INSTALL    =========================
+===========================================================
 
 TO INSTALL:
 
 $ bash install
 
-FAQ:
-Q1. I want the tokenizer (patternizer) to support more things. 
-A.  Download the tokenizer from my bitbucket repo
+This will untar the most current version of the patternizer
+(token_prototype.tar.gz) and run the install script. It
+will also do some cleaning.
+
+===========================================================
+===================      FAQ      =========================
+===========================================================
+
+Q0. Where are the git repositories?
+A. Patternizer Frontend:
+
+   $ git clone https://quinlan_jung@bitbucket.org/quinlan_jung/patternizer.git	
+
+   Patternizer Backend:
+
+   $ git clone https://quinlan_jung@bitbucket.org/quinlan_jung/patternizer_site.git
+
+
+Q1. I want the patternizer to support more patterns. 
+A.  You should clone the patternizer backend. Be sure 
+    to read the README.
+
+Q2. What does the term "support" mean?
+A.  It is used by loghound, and means the same thing as
+	the word "frequency" (of the pattern).
+
+=============================================================
+========    WHAT ARE ALL THESE FOLDERS AND FILES FOR?    ====
+=============================================================
+
+token_prototype.tar.gz : contains the most recent version of
+the patternizer backend.
+
+layout.php : the dependencies file we import into index.php
+
+file.php : the functions that process the files you submit
+and run the patternizer on it.
+
+js/file.js : The functions to dynamically generate the 
+divs in the patterns tab 
+
+install: the script that sets up the entire webapp
+
+
+

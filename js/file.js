@@ -1,3 +1,5 @@
+// The functions to dynamically generate the divs in the patterns tab 
+
 function replaceDiv(str){
 	str = str.replace(/\<button\>(((?!\<\/button\>).)*)\<\/button\>/g, function(a,b){
         return $("body").data(b.trim());
@@ -100,4 +102,17 @@ function generateDiv (){
 	return div_name;
 	
 
+}
+
+// return a parameter value from the current URL
+function getParam ( sname ){
+    var params = location.search.substr(location.search.indexOf("?")+1);
+    var sval = "";
+    params = params.split("&");
+    // split param and value into individual pieces
+    for (var i=0; i<params.length; i++){
+        temp = params[i].split("=");
+        if ( [temp[0]] == sname ) { sval = temp[1]; }
+    } 
+    return sval;
 }

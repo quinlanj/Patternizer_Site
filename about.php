@@ -9,7 +9,11 @@ include('layout.php');
 	<h1>About</h1>
 	<br>
 	<p>
-		"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur
+		The patternizer is a prototype application that finds common regex patterns in logs. 
+		The user will input a file or put some text into the textbox.
+		The most common patterns are generated in the next tab.
+		The user clicks the pattern that most closely matches what he/she is looking for.
+		The corresponding regex will show up in the output tab for the user to use at their own leisure.
 	</p>
 	</div>
   </div>
