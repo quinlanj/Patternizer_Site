@@ -4,7 +4,7 @@ padding-top:2cm;
 }
 
 
- 
+
 
 /* This CSS will set the hover transitions */
 div.clickable {
@@ -18,7 +18,7 @@ div.clickable {
 }
 
 
-/* This CSS add-on will make the div class="hover" change its background color on hover. 
+/* This CSS add-on will make the div class="hover" change its background color on hover.
 This way you don't need to do any javascript */
 div.clickable:hover{
 	background-color: lightblue;

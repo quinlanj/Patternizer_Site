@@ -27,9 +27,14 @@ include('layout.php');
   <div class="tab-pane active" id="patternizer">
     <h1>Step 1: Upload your log file.</h1><hr>
     <!-- Form for input -->
+
         <form id="input_data" action="file.php" name="form" method="post" enctype="multipart/form-data">
           <div class="form-group">
-            <textarea name="text_box" title="Must be at least 8 characters." cols=45 rows=10 class="form-control"></textarea>
+            <textarea id="textbox" name="text_box" title="Must be at least 8 characters." cols=145 rows=10 class="form-control"></textarea>
+            <br>
+            <button id="popbutton" type="button" class="btn btn-info">Or use test data</button>
+            <br>
+            <br>
             <label for="file">Filename:</label>
             <input type="file" name="file" id="file" class="form-control">
           </div><br>
@@ -92,8 +97,18 @@ include('layout.php');
       });
       getFile();
 
-
-
+      //This function uploads the sample_input text file into the text area upon clicking of the button
+      $(document).ready(function() {
+        $("#popbutton").click(function() {
+          $.ajax({
+            url : "sample_input",
+            dataType: "text",
+            success : function (data) {
+              $("#textbox").text(data);
+            }
+          });
+        });
+      });
 
       //This Function switches the tab to output once a pattern is selected.
       $("#result").click(function() {

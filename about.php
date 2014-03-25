@@ -9,7 +9,7 @@ include('layout.php');
 	<h1>About</h1>
 	<br>
 	<p>
-		The patternizer is a prototype application that finds common regex patterns in logs. 
+		The patternizer is a prototype application that finds common regex patterns in logs.
 		<br>
 		<br>
 		Here is a common use case:

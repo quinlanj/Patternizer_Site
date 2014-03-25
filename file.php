@@ -24,7 +24,7 @@
         	fclose($fh);
 
 			tokenize($myFile);
-    	}	
+    	}
 	}
 
 	function tokenize($file_name){
