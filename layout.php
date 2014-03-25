@@ -3,6 +3,7 @@
 <head>
 <link href="css/site.css" rel="stylesheet" media="screen">
 <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+<link href="css/bootstrap-responsive.min.css" rel="stylesheet" media="screen">
 <script type='text/javascript' src='//code.jquery.com/jquery-2.1.0.js'></script>
 <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
 <script src="js/bootstrap.min.js"></script>

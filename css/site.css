@@ -2,9 +2,9 @@ body
 {
 padding-top:2cm;
 }
-
-
-
+textarea.form-control {
+  width: 100%;
+}
 
 /* This CSS will set the hover transitions */
 div.clickable {
