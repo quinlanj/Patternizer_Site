@@ -67,6 +67,6 @@
  		upload_file();
  	}
 
- 	header('Location: ./test1.php');
+ 	header('Location: ./test1.php?submitted=true');
  	die();
 ?>

@@ -70,6 +70,27 @@ include('layout.php');
 
 <!-- Javascript -->
 <script>
+      // return a parameter value from the current URL
+      function getParam ( sname ){
+        var params = location.search.substr(location.search.indexOf("?")+1);
+        var sval = "";
+        params = params.split("&");
+        // split param and value into individual pieces
+        for (var i=0; i<params.length; i++){
+            temp = params[i].split("=");
+            if ( [temp[0]] == sname ) { sval = temp[1]; }
+        } 
+        return sval;
+      }
+
+      // Check to see if we have submitted a log file or anything in the text box
+      // switch to the patterns tab if we have
+      if (getParam("submitted")=="true"){
+        $("#a2").toggleClass("active");
+        $("#patterns").toggleClass("active");
+        $("#a2").siblings().removeClass("active");
+        $("#patterns").siblings().removeClass("active");
+      }
 
 
 
@@ -83,15 +104,6 @@ include('layout.php');
       getFile();
 
 
-
-      //This function switches the patternizer tab to patterns when it is clicked.
-      $("#search-submit").click(function() {
-        $("#a2").toggleClass("active");
-        $("#patterns").toggleClass("active");
-        $("#a2").siblings().removeClass("active");
-        $("#patterns").siblings().removeClass("active");
-      });
-      //End of function
 
 
       //This Function switches the tab to output once a pattern is selected.
