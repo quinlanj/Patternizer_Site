@@ -71,8 +71,7 @@ include('layout.php');
 <!-- End of Tab Panes -->
 
 
-</div>
-<!-- Div Class Container End-->
+</div><!-- Div Class Container End-->
 
 
 <!-- Javascript -->
