@@ -25,7 +25,7 @@ include('layout.php');
 <!-- PATTERNIZER TAB -->
 <div class="tab-content">
   <div class="tab-pane active" id="patternizer">
-    <h1>Patternizer</h1><hr>
+    <h1>Upload your log file.</h1><hr>
     <!-- Form for input -->
         <form id="input_data" action="file.php" name="form" method="post" enctype="multipart/form-data">
           <div class="form-group">
@@ -35,8 +35,8 @@ include('layout.php');
           </div><br>
 
           <div class="form-group">
-            <label for="support">Frequency:</label>
-            <input type="text" name="support" size="50" placeholder="Enter the minimum frequency" class="form-control"> <br>
+            <label for="support">Minimum Pattern Frequency:</label>
+            <input type="text" name="support" size="50" placeholder="Default is 10" class="form-control"> <br>
           </div><br>
 
           <input type="submit" id="search-submit" value="submit" class="btn btn-primary">
@@ -49,14 +49,14 @@ include('layout.php');
 
 <!-- PATTERN TAB -->
   <div class="tab-pane" id="patterns">
-    <h1>Patterns</h1><hr>
+    <h1>Choose A Pattern</h1><hr>
     <div id="result"></div>
   </div>
 <!-- END OF PATTERN TAB -->
 
 <!-- OUTPUT TAB -->
   <div class="tab-pane" id="output">
-    <h1>Output</h1><hr>
+    <h1>Here is the Pattern Regex</h1><hr>
     <textarea id="regex"> </textarea>
   </div>
 <!-- END OF OUTPUT TAB -->
