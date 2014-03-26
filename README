@@ -27,11 +27,11 @@ will also do some cleaning.
 ===========================================================
 
 Q0. Where are the git repositories?
-A. Patternizer Frontend:
+A. Patternizer Backend:
 
    $ git clone https://quinlan_jung@bitbucket.org/quinlan_jung/patternizer.git	
 
-   Patternizer Backend:
+   Patternizer Frontend:
 
    $ git clone https://quinlan_jung@bitbucket.org/quinlan_jung/patternizer_site.git
 
